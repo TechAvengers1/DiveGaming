@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dive Gaming - Where Gamers Unite</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/divegaminglogo_diveronly.png">
+  <script src="validation.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    
+    apiKey: "AIzaSyBc1SQoS7yzDsQVQTd49yosqNQ03qUcuwU",
+    authDomain: "mis-4397.firebaseapp.com",
+    projectId: "mis-4397",
+    storageBucket: "mis-4397.appspot.com",
+    messagingSenderId: "388447440878",
+    appId: "1:388447440878:web:d23d6053e65055a965c8ff",
+    measurementId: "G-WE3HQ5CC15"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  <script>
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const username = urlParams.get('username');
+
+      if (username) {
+        // Display welcome message in the top right corner
+        const welcomeMessage = document.createElement('div');
+        welcomeMessage.className = 'welcome-message';
+        welcomeMessage.textContent = 'Welcome, ' + username;
+        document.body.appendChild(welcomeMessage);
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="logohead">
+      <img src="images/divegaminglogo.png" alt="Dive Gaming Logo">
+      <h3>Where Gamers Unite, Networks Ignite.</h3>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="purchase-links"> 
+    <div id="search-container">
+        <label for="gameSearch">Search for a game:</label>
+        <input type="text" id="gameSearch" placeholder="Enter game name...">
+        <button onclick="searchGames()">Search</button>
+    </div>
+    <ul id="gameList"></ul>
+    <!--<div class="purchase-links">
+      <h2>Recommended Game Purchase Links</h2>
+      <ul id="gameList"></ul>
+    </div>-->
+  </section>
+  <section id="home">
+    <center>
+      <h1>Welcome to Dive!</h1>
+      <p>Discover. Connect. Win. Dive is your exclusive gateway to a thriving gaming and streaming community.</p>
+      <p>Uniting gamers, streamers, and enthusiasts, we simplify connections, celebrate winners, and keep you in the game.
+        Elevate your gaming experience with Dive today.</p>
+    </center>
+  </section>
+  
+  <!--trending cat-->
+  <section id="trending">
+    <h2>Games Trending</h2>
+    <p>Check out the games that are trending right now!</p>
+    <div class="gtrend">
+      <div class="game-box">
+        <img src="images/cybthumb.jpg" alt="Cyberpunk 2077 Thumbnail">
+        <h2>Cyberpunk 2077</h2>
+        <p>Immerse yourself in the dystopian future of Night City as V, a mercenary seeking immortality. Navigate through a sprawling open-world, make impactful choices, and unravel a gripping narrative in this action-packed RPG.</p>
+        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Play Now</a>
+      </div>
+      <div class="game-box">
+        <img src="images/csgothumb.jpg" alt="CSGO Thumbnail">
+        <h2>Counter-Strike: Global Offensive</h2>
+        <p>Engage in intense, team-based tactical combat in this iconic first-person shooter. Join the counter-terrorist or terrorist forces, strategize with your team, and compete in bomb defusal or hostage rescue missions. Precision and teamwork are key to victory.</p>
+        <a href="https://store.steampowered.com/app/730/CounterStrike_2/">Play Now</a>
+      </div>
+      <div class="game-box">
+        <img src="images/starthumb.jpg" alt="Starfield Thumbnail">
+        <h2>Starfield</h2>
+        <p>Embark on an epic spacefaring journey in Starfield, the highly anticipated space exploration game. Explore uncharted galaxies, discover new planets, and engage in immersive storytelling as you forge your path among the stars. Uncover the mysteries of the cosmos in this upcoming adventure.</p>
+        <a href="https://store.steampowered.com/app/1716740/Starfield/">Play Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!--first row of cat-->
+  <section id="categories">
+    <div class="category">
+      <h2>Categories</h2>
+      <p>Browse by Category</p>
+      <div class="cat-games">
+        <div class="catgame-box action">
+          <a href = "action.html">
+            <img src="images/actbg.png" alt="Action Games">
+            <h2>Action</h2>
+            <p>Dive into the adrenaline-pumping world of action games! With heart-pounding gameplay and intense battles, these games promise excitement—from epic shooters to fast-paced adventures.</p>
+          </a>
+        </div>
+        <div class="catgame-box adv">
+          <a href = "advt.html">
+            <img src="images/advbg.jpg" alt="Adventure Games">
+            <h2>Adventure</h2>
+            <p>Embark on captivating adventures! Solve puzzles, explore fantastical worlds, and immerse yourself in thrilling narratives with our collection of adventure games.</p>
+          </a>
+        </div>
+        <div class="catgame-box cas">
+          <a href = "casual.html">
+            <img src="images/casbg.jpg" alt="Casual Games">
+            <h2>Casual</h2>
+            <p>Step into a world of endless fun and relaxation with our casual games collection. Embark on exciting journeys and experience a perfect blend of excitement and ease. Your next adventure awaits—join us for a unique gaming experience!</p>
+          </a>
+        </div>
+        <div class="catgame-box hor">
+            <a href="horror.html">
+                <img src="images/horbg.jpg" alt="Horror">
+                <h2>Horror</h2>
+              <p>Experience intense fear and suspense in our Horror Games. Navigate through chilling narratives, encounter supernatural entities, and immerse yourself in heart-pounding terror. Brace yourself for a gripping, spine-tingling gaming experience.</p>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!--second row of cat-->
+  <section id="categoriesII">
+    <div class="category">
+      <div class="cat-games">
+        <div class="catgame-box race">
+            <a href="racing.html">
+                <img src="images/racebg.jpg" alt="Racing">
+                <h2>Racing</h2>
+              <p>Experience high-speed racing thrills! Dive into fast-paced racing games, mastering precision, speed, and strategy. Burn rubber and aim to become a racing legend!</p>
+            </a>
+        </div>
+        <div class="catgame-box rpg">
+          <a href = "rpg.html">
+            <img src="images/rpgbg.jpg" alt="RPG Games">
+            <h2>RPG</h2>
+            <p>Embark on epic RPG adventures, face formidable foes, and shape your destiny in a world of magic and mystery. Unleash your strategic prowess in thrilling role-playing experiences.</p>
+          </a>
+        </div>
+        <div class="catgame-box sim">
+          <a href = "simulation.html">
+            <img src="images/simbg.jpg" alt="Simulation Games">
+            <h2>Simulation</h2>
+            <p>Immerse yourself in lifelike scenarios, explore creative realms, and take control of captivating simulations in our Simulation Games.</p>
+          </a>
+        </div>
+        <div class="catgame-box strat">
+          <a href = "strategy.html">
+            <img src="images/stratbg.jpg" alt="Strategy Games">
+            <h2>Strategy</h2>
+            <p>Command armies, devise cunning tactics, and shape history in our Strategy Games. Engage in epic battles, conquer realms, and showcase your strategic prowess in thrilling conflicts.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <footer>
+    <p>&copy; 2023 Dive Gaming</p>
+  </footer>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

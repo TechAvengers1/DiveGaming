@@ -1,0 +1,215 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-color: #333;
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/rpgbg.jpg') center/cover no-repeat;
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.rpg-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #333;
+  min-width: 160px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer {
+  padding: 60px;
+  text-align: center;
+  background: #1B2533;
+  color: white;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.category-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.game-box {
+  font-family: 'Oswald', sans-serif;
+  width: 30%;
+  border: 1px solid #1B2533;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  background: linear-gradient(to bottom, #1B2533, #115CFF);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.game-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-box a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.game-box:hover a {
+  color: red;
+}
+
+.game-box.divinity {
+  background: linear-gradient(to bottom, #7D98AA, #D2DDDC);
+}
+
+.game-box:hover.game-box.divinity {
+  background: linear-gradient(to bottom, #D2DDDC, #7D98AA);
+}
+
+.game-box.elder {
+  background: linear-gradient(to bottom, #080909, #303838);
+}
+
+.game-box:hover.game-box.elder {
+  background: linear-gradient(to bottom, #303838, #080909);
+}
+
+.game-box.path {
+  background: linear-gradient(to bottom, #3C2618, #754527);
+}
+
+.game-box:hover.game-box.path {
+  background: linear-gradient(to bottom, #754527, #3C2618);
+}
+
+.game-box.LordsoftheFallen {
+  background: linear-gradient(to bottom, #00CED1, #262626);
+}
+
+.game-box:hover.game-box.LordsoftheFallen {
+  background: linear-gradient(to bottom, #262626, #00CED1);
+}
+
+.game-box.thewithcer {
+  background: linear-gradient(to bottom, #89c0c8, #57596b);
+}
+
+.game-box:hover.game-box.thewithcer {
+  background: linear-gradient(to bottom, #57596b, #89c0c8);
+}
+
+.game-box.finalfantasy {
+  background: linear-gradient(to bottom, #8340ba, #443758);
+}
+
+.game-box:hover.game-box.finalfantasy {
+  background: linear-gradient(to bottom, #443758, #8340ba);
+}
+
+.game-box.masseffect {
+  background: linear-gradient(to bottom, #a23c10, #88603f);
+}
+
+.game-box:hover.game-box.masseffect {
+  background: linear-gradient(to bottom, #88603f, #a23c10);
+}
+
+.game-box.Persona5 {
+  background: linear-gradient(to bottom, #4468ca, #FF5555);
+}
+
+.game-box:hover.game-box.Persona5 {
+  background: linear-gradient(to bottom, #FF5555, #4468ca);
+}

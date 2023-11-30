@@ -1,0 +1,180 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+header{
+  position: relative;
+  background-color: #333;
+  height: 300px; 
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/racebg.jpg') center/cover no-repeat;
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.racing-heading {
+  font-family: 'Faster One', cursive;
+  font-size: 4em;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+section {
+  padding: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #333;
+  min-width: 160px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+.dropdown.open .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer{
+  padding: 60px;
+  text-align: center;
+  background: #1B2533;
+  color: white;
+  font-size: 30px;
+  font-family: 'Faster One', cursive;
+}
+.category-box {
+  display: flex;
+  justify-content: space-around; 
+  margin: 10px;
+}
+.game-box {
+  font-family: 'Oswald', sans-serif;
+  width: 30%;
+  border: 1px solid #1B2533;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px ;
+  background: linear-gradient(to bottom, #1B2533, #115CFF);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.game-box img {
+  max-width: 100%; 
+  height: auto; 
+}
+.game-box a {
+  color: #fff; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.game-box:hover a {
+  color: red;
+}
+.game-box.assetto {
+  background: linear-gradient(to bottom, #5B583F, #6C842E);
+}
+.game-box:hover.game-box.assetto{
+  background: linear-gradient(to bottom, #6C842E, #5B583F);
+}
+.game-box.forza {
+  background: linear-gradient(to bottom, #8A3425, #C5873C);
+}
+.game-box:hover.game-box.forza{
+  background: linear-gradient(to bottom, #C5873C, #8A3425);
+}
+.game-box.nfspeed {
+  background: linear-gradient(to bottom, #313E99, #CC43AB);
+}
+.game-box:hover.game-box.nfspeed{
+  background: linear-gradient(to bottom, #CC43AB, #313E99);
+}
+.game-box.dirtrally {
+  background: linear-gradient(to bottom, #8d6611, #372cc9);
+}
+.game-box:hover.game-box.dirtrally{
+  background: linear-gradient(to bottom, #372cc9, #8d6611);
+}
+.game-box.gta5 {
+  background: linear-gradient(to bottom, #382819, #e1ce51);
+}
+.game-box:hover.game-box.gta5{
+  background: linear-gradient(to bottom, #e1ce51, #382819);
+}
+.game-box.beamNG {
+  background: linear-gradient(to bottom, #7c8388, #de7717);
+}
+.game-box:hover.game-box.beamNG{
+  background: linear-gradient(to bottom, #de7717,#7c8388);
+}
+.game-box.riders {
+  background: linear-gradient(to bottom, #ebf74b, #75e6cf);
+}
+.game-box:hover.game-box.riders{
+  background: linear-gradient(to bottom, #75e6cf, #ebf74b);
+}
+.game-box.Snowrunner {
+  background: linear-gradient(to bottom, #b2ddeb, #828786);
+}
+.game-box:hover.game-box.Snowrunner{
+  background: linear-gradient(to bottom, #828786, #b2ddeb);
+}

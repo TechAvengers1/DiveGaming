@@ -1,0 +1,209 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-color: #333;
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/simbg.jpg') center/cover no-repeat;
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.sim-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #333;
+  min-width: 160px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+.dropdown.open .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer {
+  padding: 60px;
+  text-align: center;
+  background: #1B2533;
+  color: white;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.category-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.game-box {
+  font-family: 'Oswald', sans-serif;
+  width: 30%;
+  border: 1px solid #1B2533;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  background: linear-gradient(to bottom, #1B2533, #115CFF);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.game-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-box a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.game-box:hover a {
+  color: red;
+}
+
+.game-box.cities {
+  background: linear-gradient(to bottom, #3C374B, #97768F);
+}
+
+.game-box:hover.game-box.cities {
+  background: linear-gradient(to bottom, #97768F, #3C374B);
+}
+
+.game-box.stardew {
+  background: linear-gradient(to bottom, #0F5FCF, #84EDF5);
+}
+
+.game-box:hover.game-box.stardew {
+  background: linear-gradient(to bottom, #84EDF5, #0F5FCF);
+}
+
+.game-box.thesims {
+  background: linear-gradient(to bottom, #AAC8B2, #EAF5E7);
+}
+
+.game-box:hover.game-box.thesims {
+  background: linear-gradient(to bottom, #EAF5E7, #AAC8B2);
+}
+.game-box.Eurotruck {
+  background: linear-gradient(to bottom, #dbb21f, #EAF5E7);
+}
+
+.game-box:hover.game-box.Eurotruck {
+  background: linear-gradient(to bottom, #EAF5E7, #dbb21f);
+}
+
+.game-box.easports {
+  background: linear-gradient(to bottom, #141114, #1B2E5F);
+}
+
+.game-box:hover.game-box.easports {
+  background: linear-gradient(to bottom, #1B2E5F, #141114);
+}
+
+.game-box.rim {
+  background: linear-gradient(to bottom, #111921, #9D6F44);
+}
+
+.game-box:hover.game-box.rim {
+  background: linear-gradient(to bottom, #9D6F44, #111921);
+}
+
+.game-box.war {
+  background: linear-gradient(to bottom, #8598AC, #B1CBD9);
+}
+
+.game-box:hover.game-box.war {
+  background: linear-gradient(to bottom, #B1CBD9, #8598AC);
+}
+
+.game-box.anno {
+  background: linear-gradient(to bottom, #584435, #8F6135);
+}
+
+.game-box:hover.game-box.anno {
+  background: linear-gradient(to bottom, #8F6135, #584435);
+}

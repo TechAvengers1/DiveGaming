@@ -1,0 +1,185 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+header{
+  position: relative;
+  background-color: #333;
+  height: 300px; 
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/casbg.jpg') center/cover no-repeat;
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.casual-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+section {
+  padding: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #333;
+  min-width: 160px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+.dropdown.open .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer{
+  padding: 60px;
+  text-align: center;
+  background: #1B2533;
+  color: white;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.category-box {
+  display: flex;
+  justify-content: space-around; 
+  margin: 10px;
+}
+.game-box {
+  font-family: 'Oswald', sans-serif;
+  width: 30%;
+  border: 1px solid #1B2533;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  background: linear-gradient(to bottom, #1B2533, #115CFF);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.game-box img {
+  max-width: 100%; 
+  height: auto; 
+}
+.game-box a {
+  color: #fff; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.game-box:hover a {
+  color: red;
+}
+.game-box.among-us {
+  background: linear-gradient(to bottom, #16171B, #C3AE53);
+}
+.game-box:hover.game-box.among-us{
+  background: linear-gradient(to bottom, #C3AE53, #16171B);
+}
+.game-box.fort {
+  background: linear-gradient(to bottom, #7432BB, #8B609D);
+}
+.game-box:hover.game-box.fort{
+  background: linear-gradient(to bottom, #8B609D, #7432BB);
+}
+.game-box.over {
+  background: linear-gradient(to bottom, #61C8E2, #514839);
+}
+.game-box:hover.game-box.over{
+  background: linear-gradient(to bottom, #514839, #61C8E2);
+}
+.game-box.mine {
+  background: linear-gradient(to bottom, #568037, #7C5841);
+}
+.game-box:hover.game-box.mine{
+  background: linear-gradient(to bottom, #7C5841, #568037);
+}
+
+.game-box.terr {
+  background: linear-gradient(to bottom, #3B3651, #56BD79);
+}
+.game-box:hover.game-box.terr{
+  background: linear-gradient(to bottom, #56BD79, #3B3651);
+}
+.game-box.fall {
+  background: linear-gradient(to bottom, #6C9FC4, #9DE0DF);
+}
+.game-box:hover.game-box.fall{
+  background: linear-gradient(to bottom, #9DE0DF, #6C9FC4);
+}
+.game-box.under {
+  background: linear-gradient(to bottom, #020101, #56536F);
+}
+.game-box:hover.game-box.under{
+  background: linear-gradient(to bottom, #56536F, #020101);
+}
+.game-box.unpack {
+  background: linear-gradient(to bottom, #9F735A, #BF6688);
+}
+.game-box:hover.game-box.unpack{
+  background: linear-gradient(to bottom, #BF6688, #9F735A);
+}

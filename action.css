@@ -1,0 +1,215 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-color: #333;
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/actbg.png') center/cover no-repeat;
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.action-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #333;
+  min-width: 160px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer {
+  padding: 60px;
+  text-align: center;
+  background: #1B2533;
+  color: white;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.category-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.game-box {
+  font-family: 'Oswald', sans-serif;
+  width: 30%;
+  border: 1px solid #1B2533;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  background: linear-gradient(to bottom, #1B2533, #115CFF);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.game-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-box a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.game-box:hover a {
+  color: red;
+}
+
+.game-box.apex-legends {
+  background: linear-gradient(to bottom, #512626, #89251A);
+}
+
+.game-box:hover.game-box.apex-legends {
+  background: linear-gradient(to bottom, #89251A, #512626);
+}
+
+.game-box.left-4dead {
+  background: linear-gradient(to bottom, #1A1402, #5C4A08);
+}
+
+.game-box:hover.game-box.left-4dead {
+  background: linear-gradient(to bottom, #5C4A08, #1A1402);
+}
+
+.game-box.dest2 {
+  background: linear-gradient(to bottom, #0F1C29, #525F6C);
+}
+
+.game-box:hover.game-box.dest2 {
+  background: linear-gradient(to bottom, #525F6C, #0F1C29);
+}
+
+.game-box.doom {
+  background: linear-gradient(to bottom, #592220, #893A32);
+}
+
+.game-box:hover.game-box.doom {
+  background: linear-gradient(to bottom, #893A32, #592220);
+}
+
+.game-box.hades {
+  background: linear-gradient(to bottom, #632E23, #CB532C);
+}
+
+.game-box:hover.game-box.hades {
+  background: linear-gradient(to bottom, #CB532C, #632E23);
+}
+
+.game-box.mortal {
+  background: linear-gradient(to bottom, #382819, #725636);
+}
+
+.game-box:hover.game-box.mortal {
+  background: linear-gradient(to bottom, #725636, #382819);
+}
+
+.game-box.assassin {
+  background: linear-gradient(to bottom, #AFB5BA, #252224);
+}
+
+.game-box:hover.game-box.assassin {
+  background: linear-gradient(to bottom, #252224, #AFB5BA);
+}
+
+.game-box.devil {
+  background: linear-gradient(to bottom, #6A211D, #33334A);
+}
+
+.game-box:hover.game-box.devil {
+  background: linear-gradient(to bottom, #33334A, #6A211D);
+}
